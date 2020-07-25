@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type = "text/css">
+      .menu ul li
+        { 
+          background-color: chocolate;
+          float: left; 
+          width: 252px; 
+          height: 40px; 
+          display:inline-block;
+          text-align: center;
+          line-height: 40px;
+          font-size: 20px;
+        }
+      .center{
+        // modificado
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+        flex-direction:column;
+        text-align: center;
+      }
+      .menu ul li:hover{background-color: greenyellow;}
+      .menu ul{padding: 0;}
+      .menu ul ul{display:none;}
+      .menu ul li:hover > ul{display:block;}
+      .footer{position:absolute; bottom:0; width:100%;}
+      #divpos{position:absolute; left:50%; top:50%; margin-left:-110px; margin-top:-60px}
+      #imgpos{position:absolute; left:50%; top:50%; margin-left:-70px; margin-top:-250px}
+    </style>
+    <title>Hommy-login</title>
+  </head>
+  <body>
+    <nav class = "menu">
+      <ul>
+         <a href = "index.html"><li>Home</li></a>
+        <a href = "login.html"><li>Login</li></a>
+        <a href = "quem-somos.html"><li>Quem somos</li></a>
+        <a href = "cadastro.html"><li>Cadastre-se</li></a>
+        <a href = "fale-com-a-gente.html"><Li>Fale com a gente</Li></a>
+      </ul>
+    </nav>
+    <div class="Tela" id="divpos" class="center">
+
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaeGj5nIiS3g1e-oUB5JY-lq-_j3x9f8tYAA&usqp=CAU"
+         alt = "logomarca da empresa" id="imgpos" width="153" height="99"></p>
+
+
+       <p><h3>Login</h3></p>
+       <p><label for="email">Email:</label></p>
+       <p><input type="email" name="placeholder="Email"></p>
+       <br>
+       <p><label for="Password">Password</label></p>
+       <input type="password" name="">
+       <br>
+       <p><button type="button" value="entrar">Entrar</button></p>
+    </div>
+   
+
+    
+      
+   
+    <center><p><footer class="footer">E-mail: contato@republica.com.br  -  Telefone: 55 (21) 2222-2222</footer></p>
+    </center>
+  </body>
+  
+  
+
+</html>

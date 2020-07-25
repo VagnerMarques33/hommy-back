@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type = "text/css">
+      .menu ul li
+        { 
+          background-color: chocolate;
+          float: left; 
+          width: 252px; 
+          height: 40px; 
+          display:inline-block;
+          text-align: center;
+          line-height: 40px;
+          font-size: 20px;
+        }
+      .p{text-align:justify;}
+      .menu ul li:hover{background-color: greenyellow;}
+      .menu ul{padding: 0;}
+      .menu ul ul{display:none;}
+      .menu ul li:hover > ul{display:block;}
+      .footer{position:absolute; bottom:0; width:100%;}
+    </style>
+    <title>Hommy- Fale com a gente</title>
+  </head>
+  <body>
+    <nav class = "menu">
+      <ul>
+         <a href = "index.html"><li>Home</li></a>
+        <a href = "login.html"><li>Login</li></a>
+        <a href = "quem-somos.html"><li>Quem somos</li></a>
+        <a href = "cadastro.html"><li>Cadastre-se</li></a>
+        <a href = "fale-com-a-gente.html"><Li>Fale com a gente</Li></a>
+      </ul>
+    </nav>
+    
+    <p><h1>Podemos te ajudar?</h1></p><br>
+    <br>
+    <p>
+        Nome:<br>
+        <input type="text" name="none">
+    </p><br>
+
+    <p>
+        E-mail:<br>
+        <input type="text" name="e-mail">
+    </p><br>
+
+    <p>
+        Mensagem:<br>
+       <textarea rows="3" cols="60">Digite sua mensagem</textarea>
+    </p>
+
+    <center>
+        <button type="submit" 
+        onclick="alert('Sua mensagem foi enviada com sucesso em breve responderemos')">Enviar</button>
+    </center>
+
+   
+    <center><p><footer class="footer">E-mail: contato@republica.com.br  -  Telefone: 55 (21) 2222-2222</footer></p>
+    </center>
+  </body>

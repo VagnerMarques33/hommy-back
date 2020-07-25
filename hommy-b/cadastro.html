@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type = "text/css">
+      .menu ul li
+        { 
+          background-color: chocolate;
+          float: left; 
+          width: 250px; 
+          height: 40px; 
+          display:inline-block;
+          text-align: center;
+          line-height: 40px;
+          font-size: 20px;
+        }
+      .center{
+        // modificado
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+        flex-direction:column;
+        text-align: center;
+      }
+      .menu ul li:hover{background-color: greenyellow;}
+      .menu ul{padding: 0;}
+      .menu ul ul{display:none;}
+      .menu ul li:hover > ul{display:block;}
+      .footer{position:absolute; bottom:0; width:100%;}
+      .scroll{overflow: auto;}
+      }
+    </style>
+    <title>Hommy-Cadastro</title>
+  </head>
+  <body class="scroll">
+    <nav class = "menu">
+      <ul>
+         <a href = "index.html"><li>Home</li></a>
+        <a href = "login.html"><li>Login</li></a>
+        <a href = "quem-somos.html"><li>Quem somos</li></a>
+        <a href = "cadastro.html"><li>Cadastre-se</li></a>
+        <a href = "fale-com-a-gente.html"><Li>Fale com a gente</Li></a>
+      </ul>
+    </nav><br>
+
+    <div class="Tela" id="divpos" class="center"></div><br>
+       <br>
+       <br>
+        <p><h3>Cadastro</h3></p>
+
+        Foto:<br>
+        <input type="file" name="image" placeholder="carregue sua foto"/><br>
+        <br>
+        Nome:<br>
+        <input type="text" name="nome" placeholder="digite nome"/><br>
+        <br>
+        CPF:<br>
+        <input type="text" name="cpf" placeholder="digite o número do CPF"/><br>
+        <br>
+        RG:<br>
+        <input type="text" name="rg" placeholder="digite o número do rg"/><br>
+        <br>
+        Endereço:<br> 
+        <br> 
+        Rua/Av/Est.:<br>
+        <input type="text" name="rua" placeholder="digite o nome da rua/Av/Est."/><br>
+        Bairro:<br>
+        <input type="text" name="bairro" placeholder="digite o seu bairro"/><br>
+        Cidade:<br>
+        <input type="text" name="cidade" placeholder="digite sua cidade"/><br>
+        Estado:<br>
+        <input type="text" name="estado" placeholder="digite o seu Estado"/><br>
+        <br>
+        E-mail:<br>
+        <input type="text" name="email" placeholder="digite o e-mail"/><br>
+        <br>
+        Opção de cadastro:<br>
+        Locatário
+        <input type="checkbox" name="Locatário"/>
+        Locador
+        <input type="checkbox" name="Locador"/><br>
+        <br>
+        Cadastre sua senha<br>
+        <input type="password" name="senha" placeholder="digite sua senha"/><br>
+        Confirme sua senha<br>
+        <input type="password" name="senha" placeholder="confirme sua senha"/><br>
+
+        <center><button type="submit" onclick="alert('Seu cadastro foi realizado com sucesso')">Cadastrar</button>
+        </center>
+        <center><p>E-mail: contato@republica.com.br  -  Telefone: 55 (21) 2222-2222</p>
+        </center>
+    </div>
+   
+    
+   
+    
+  </body>
+  
+
+</html>
